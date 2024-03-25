@@ -98,31 +98,60 @@
               <div class="post">
                 <article>
                   <p><strong>📝 Background:</strong></p>
-                  <p>In today's technological landscape, action recognition has emerged as a pivotal area of research with widespread applications in security monitoring, human-computer interaction, virtual reality, and beyond. Traditional action recognition techniques predominantly rely on data captured by RGB cameras. However, these methods often struggle under extreme lighting conditions or during fast-motion scenarios, suffering from the effects of light variations and motion blur. These challenges underscore the limitations of current technologies and highlight the urgent need for new solutions to enhance the adaptability and robustness of action recognition.</p>
+                  <p>Creating model skeletal animations traditionally accounts for the largest portion of labor in animation production. This process is often plagued by long production cycles, short usage spans, and a low rate of action reuse. While motion capture technology has become a trend in animation for its time efficiency and ease, the resulting data often lacks reusability, leading to significant wastage.</p>
                   <div class="row">
                     <div class="col-sm mt-3 mt-md-0 d-flex justify-content-center">
                       <figure>
                         <picture>
-                          <img src="../img/event1.webp" class="img-fluid rounded z-depth-1" height="auto" title="trashui" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
+                          <img src="../img/mainstyle.png" class="img-fluid rounded z-depth-1" height="auto" title="trashui" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
                         </picture>
                       </figure>
                     </div>
                   </div>
-                  <div class="caption">Comparison of event camera and traditional vision camera.</div>
-                  <p><strong>⚙️ Submitted Work:</strong></p>
-
+                  <div class="caption">Overall work.</div>
+                  <p><strong>🤔 Objective:</strong></p>
+                  <p>This project addresses these issues by researching motion style transfer methods for skeletal animation using deep learning, culminating in the development of a motion style transfer platform.</p>
+                  <p><strong>⚙️ Research & Development Highlights:</strong></p>
                   <p>
-                    To address the challenges mentioned in the background, we embarked on a novel research initiative focused on action recognition using event camera. Event camera is an advanced visual sensing technology that monitors and records changes in pixel brightness in real-time. Unlike traditional RGB cameras, event cameras have unique advantages in processing rapid movements and extreme lighting conditions, providing a groundbreaking solution that effectively overcomes the limitations of conventional technologies.
+                    <code class="language-plaintext highlighter-rouge">Human Skeleton Key-point Extraction from Video Sequences:</code>
                   </p>
                   <p>
-                    Our research is particularly concentrated on action recognition under few-shot learning conditions. By filtering event data and fully leveraging the characteristics of events during the prototype matching phase, our methodology is capable of learning and accurately identifying actions from limited datasets. This significantly reduces the reliance on large-scale annotated datasets, which is crucial for lowering both the technological implementation barriers and research costs.
+                    Utilized OpenPose for extracting human skeletal structure from video content, streamlining the process of capturing key motion data efficiently.
                   </p>
-                    <p>
-                    We have submitted our initial research findings to ECCV2024 and, to the best of our knowledge, ours is the pioneering work in this direction.
+                  <p>
+                    <code class="language-plaintext highlighter-rouge">Motion Style Transfer with Generative Adversarial Networks:</code>
                   </p>
-                  <p><strong>📅Development date:</strong></p>
-                  <p>Dec 2024</p>
+                  <p>
+                    We've engineered an innovative network that takes two inputs: style and content. The style input is encoded for 2D and 3D compatibility, then refined through a streamlined process involving convolution, normalization, and activation to generate key latent codes. These codes are transformed by a decoder that merges style and content, utilizing adaptive normalization and upscaling to produce the final stylized motion. A discriminator then evaluates the authenticity of these motion segments.
+                  </p>
+                  <p>
+                    <code class="language-plaintext highlighter-rouge">BVH File-Driven Model Display with Three.js:</code>
+                  </p>
+                  <p>
+                    Leveraged Three.js to bind the human model to the style-transferred BVH files, showcasing the final animation with seamless browser integration.
+                  </p>
+                  <div class="row">
+                    <div class="col-sm d-flex justify-content-center">
+                      <figure>
+                        <picture>
+                          <img src="../img/2d.png" class="img-fluid rounded z-depth-1" height="auto" alt="2D Style Image" loading="eager" onerror="this.onerror=null; this.src='path_to_fallback_image';">
+                        </picture>
+                        <figcaption class="caption">2D Style Input</figcaption>
+                      </figure>
+                    </div>
+                    <div class="col-sm d-flex justify-content-center">
+                      <figure>
+                        <picture>
+                          <img src="../img/3d.png" class="img-fluid rounded z-depth-1" height="auto" alt="3D Style Image" loading="eager" onerror="this.onerror=null; this.src='path_to_fallback_image';">
+                        </picture>
+                        <figcaption class="caption">3D Style Input</figcaption>
+                      </figure>
+                    </div>
+                  </div>                  
+                  <p><strong>📅 Development date:</strong></p>
+                  <p>Oct 2020</p>
+                  <p><strong>🕓 Cost Time:</strong></p>
+                  <p>5 months.</p>
                 </article>
               </div>
             </div>
